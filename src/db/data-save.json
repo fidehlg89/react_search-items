@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "price": 1,
+    "image": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cheight=675%2Cmetadata=none%2Conerror=redirect%2Cq=85%2Cwidth=1200/wp-content/uploads/apple-day1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mangoes",
+    "price": 5,
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2017-05/05/full/1493968178-113.jpg?im=Resize,width=480"
+  },
+  {
+    "id": 3,
+    "name": "Banana",
+    "price": 0.5,
+    "image": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cmetadata=none%2Conerror=redirect%2Cq=85%2Cwidth=968/wp-content/uploads/banana-day1-scaled.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Grapes",
+    "price": 200,
+    "image": "https://apps.tourisme-alsace.info//DotNet/LEI.Smallit/smallit.aspx?width=400&height=300&crop=1&imageurl=https://apps.tourisme-alsace.info/photos/essais/photos/245000239_1.jpg"
+  }
+]
