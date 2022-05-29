@@ -1,3 +1,7 @@
+# Resume
+Simple Items List project with react js + tailwind
+Basic json-server
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
