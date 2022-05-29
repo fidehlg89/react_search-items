@@ -1,25 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Item, NoItems, SearchItem } from "../";
+import { connect } from "react-redux";
+import { getItemsAsync } from "../../redux/actions/asyncActions/itemsAsync";
 
-const ItemList = () => {
-  const [items, setItems] = useState([]);
+const ItemList = ({ items, itemsData }) => {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState([]);
+  const [results, setResults] = useState([]);
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    itemsData();
+  }, [itemsData]);
 
-  const fetchData = () => {
-    fetch("http://localhost:3004/products")
-      .then((response) => response.json())
-      .then((data) => {
-        setItems(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  useEffect(() => {
+    setResults(items);
+  }, [setResults, items]);
 
   const onChangeHandler = (event) => {
     setQuery(event.target.value);
@@ -29,38 +23,44 @@ const ItemList = () => {
     const foundItems = items.filter((item) =>
       item.name.toLowerCase().includes(query.toLowerCase())
     );
-    setResult(foundItems);
+    setResults(foundItems);
   };
 
   const onReset = () => {
     setQuery("");
-    setResult([]);
+    setResults(items);
   };
 
   return (
-    <div className="container">
-      <div className="max-w-2xl mx-auto py-8 px-4 sm:py-12 sm:px-3 lg:max-w-7xl lg:px-4">
+      <>
         <SearchItem
           query={query}
           onChange={onChangeHandler}
           onSearch={onSearch}
           onReset={onReset}
         />
-        <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
-          Available items
-        </h2>
         {
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {result && result.length > 0 ? (
-              result.map((item) => <Item key={item.id} data={item} />)
+            {results != null && results.length > 0 ? (
+              results.map((item) => <Item key={item.id} data={item} />)
             ) : (
               <NoItems />
             )}
           </div>
         }
-      </div>
-    </div>
+      </>
   );
 };
 
-export default ItemList;
+const mapStateToProps = (state) => {
+  console.log('Items list state', state)
+  return {
+    items: state.items.data,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  itemsData: () => dispatch(getItemsAsync()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(ItemList);

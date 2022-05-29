@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = ({ query, onChange, onSearch, onReset }) => {
   return (
-    <div className="max-w-md w-full flex space-x-4">
+    <div className="w-full flex flex-wrap space-x-4">
       <div className="group relative">
         <svg
           width="20"
