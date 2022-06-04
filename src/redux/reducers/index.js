@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 import items from "./ItemsReducer";
-import car from "./CarReducer";
+import cart from "./CartReducer";
 
 // to combine all reducers together
 const appReducer = combineReducers({
   items,
-  car
+  cart
 });
 
 export default appReducer;

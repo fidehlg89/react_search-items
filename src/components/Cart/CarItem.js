@@ -1,4 +1,4 @@
-const CarItem = ({ item, onDelete }) => {
+const CartItem = ({ item, onDelete }) => {
   return (
     <div className="flex font-sans rounded-md shadow-lg px-4 py-4">
       <div className="flex-none w-48 relative">
@@ -38,4 +38,4 @@ const CarItem = ({ item, onDelete }) => {
   );
 };
 
-export default CarItem;
+export default CartItem;

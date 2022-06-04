@@ -1,12 +1,12 @@
-import { CarList } from "../components";
+import { CartList } from "../components";
 
-const CarPage = () => {
+const CartPage = () => {
   return (
     <div>
       <header>Car List</header>
-      <CarList />
+      <CartList />
     </div>
   );
 };
 
-export default CarPage;
+export default CartPage;

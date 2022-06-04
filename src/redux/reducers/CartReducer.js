@@ -1,13 +1,12 @@
-import { GET_CAR } from "../actions/actionTypes";
+import { GET_CART } from "../actions/actionTypes";
 
 const initialState = {
   item: null,
 };
 
 export default function common(state = initialState, action) {
-  console.log(state);
   switch (action.type) {
-    case GET_CAR:
+    case GET_CART:
       const { list } = action.payload;
       return {
         ...state,
