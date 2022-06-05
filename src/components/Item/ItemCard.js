@@ -14,7 +14,7 @@ const ItemCard = ({ item }) => {
         itemId: item.id
       }),
     };
-    fetch("http://localhost:3004/car", requestOptions)
+    fetch("http://localhost:3004/cart", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data));
   };

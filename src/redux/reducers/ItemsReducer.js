@@ -5,7 +5,6 @@ const initialState = {
 };
 
 export default function common(state = initialState, action) {
-  console.log(state)
   switch (action.type) {
     case GET_ITEMS:
       const { data } = action.payload;
