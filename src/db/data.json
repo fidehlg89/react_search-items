@@ -25,20 +25,5 @@
       "image": "assets/images/smallit.jpeg"
     }
   ],
-  "cart": [
-    {
-      "name": "Banana",
-      "price": 0.5,
-      "image": "assets/images/banana-day1-scaled.avif",
-      "itemId": 3,
-      "id": 2
-    },
-    {
-      "name": "Apple",
-      "price": 1,
-      "image": "assets/images/apple-day1.avif",
-      "itemId": 1,
-      "id": 3
-    }
-  ]
+  "cart": []
 }

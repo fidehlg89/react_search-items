@@ -1,4 +1,6 @@
 import Navbar from "./Navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -9,6 +11,7 @@ const DefaultLayout = ({ children }) => {
           {children}
         </div>
       </main>
+      <ToastContainer autoClose={2000} />
     </div>
   );
 };
