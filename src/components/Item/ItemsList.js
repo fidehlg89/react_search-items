@@ -21,6 +21,7 @@ const ItemsList = ({ items, itemsData }) => {
   };
 
   const onSearch = () => {
+    console.log(query)
     if (query === "") {
       toast.error("Search query empty, please type an item name to search", {
         position: toast.POSITION.TOP_CENTER,
@@ -62,7 +63,6 @@ const ItemsList = ({ items, itemsData }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log("Items list state", state);
   return {
     items: state.items.data,
   };

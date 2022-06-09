@@ -4,6 +4,7 @@ const ItemsPage = () => {
   return (
     <div>
       <header>Items List</header>
+
       <ItemsList />
     </div>
   );
