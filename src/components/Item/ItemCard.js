@@ -1,7 +1,7 @@
 import React from "react";
-import Counter from "../Counter";
 
 const ItemCard = ({ item }) => {
+
   const addToCar = (i) => {
     console.log(i);
     const requestOptions = {
@@ -11,7 +11,7 @@ const ItemCard = ({ item }) => {
         name: item.name,
         price: item.price,
         image: item.image,
-        itemId: item.id,
+        itemId: item.id
       }),
     };
     fetch("http://localhost:3004/cart", requestOptions)
@@ -37,13 +37,11 @@ const ItemCard = ({ item }) => {
                 {item.name}
               </a>
             </h3>
-            <p className="mt-1 text-sm text-gray-500">In Stock: {item.stock}</p>
+            <p className="mt-1 text-sm text-gray-500">In Stock: 50</p>
           </div>
           <p className="text-sm font-medium text-gray-900">$ {item.price}</p>
         </div>
-
-        <div className="mt-4 pb-4 px-4 flex justify-center space-x-2">
-          <Counter />
+        <div className="mt-4 pb-4 px-4 flex justify-center">
           <button
             onClick={() => addToCar(item)}
             className="flex justify-between items-center text-sm text-white bg-indigo-700 py-2 px-4 rounded-lg uppercase"
