@@ -1,6 +1,11 @@
 # Resume
 Simple Items List project with react js + tailwind
-Basic json-server
+Basic json-server api
+
+# Install
+run "yarn install" to get all dependencies
+run "yarn add json-server" to install
+
 
 # Getting Started with Create React App
 

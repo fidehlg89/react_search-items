@@ -4,25 +4,29 @@
       "id": 1,
       "name": "Apple",
       "price": 1,
-      "image": "assets/images/apple-day1.avif"
+      "image": "assets/images/apple-day1.avif",
+      "stock": 15
     },
     {
       "id": 2,
       "name": "Mangoes",
       "price": 5,
-      "image": "assets/images/magoes.webp"
+      "image": "assets/images/magoes.webp",
+      "stock": 40
     },
     {
       "id": 3,
       "name": "Banana",
       "price": 0.5,
-      "image": "assets/images/banana-day1-scaled.avif"
+      "image": "assets/images/banana-day1-scaled.avif",
+      "stock": 70
     },
     {
       "id": 4,
       "name": "Grapes",
       "price": 200,
-      "image": "assets/images/smallit.jpeg"
+      "image": "assets/images/smallit.jpeg",
+      "stock": 10
     }
   ],
   "cart": []
