@@ -1,36 +1,12 @@
+import Decrement from "./Decrement";
+import Increment from "./Increment";
+
 const Counter = () => {
   return (
-    <div className="flex flex-wrap items-center justify-between border border-gray-400 rounded-lg">
-      <button className="p-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 4v16m8-8H4"
-          />
-        </svg>
-      </button>
-      <div className="p-1">{20}</div>
-
-      <button className="p-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
-        </svg>
-      </button>
+    <div className="flex border border-gray-300 rounded-lg shadow-lg">
+      <Decrement />
+        <div className="p-1 bg-gray-100">{20}</div>
+      <Increment />
     </div>
   );
 };

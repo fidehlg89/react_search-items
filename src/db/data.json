@@ -20,7 +20,7 @@
       "price": 0.5,
       "image": "assets/images/banana-day1-scaled.avif",
       "stock": 70
-},
+    },
     {
       "id": 4,
       "name": "Grapes",
@@ -29,14 +29,5 @@
       "stock": 10
     }
   ],
-  "cart": [
-    {
-      "name": "Apple",
-      "price": 1,
-      "image": "assets/images/apple-day1.avif",
-      "itemId": 1,
-      "id": 1,
-      "count": 4
-    }
-  ]
+  "cart": []
 }
