@@ -2,47 +2,44 @@ import React from "react";
 
 const Search = ({ query, onChange, onSearch, onReset }) => {
   return (
-    <div className="w-full flex flex-wrap space-x-4">
-      <div className="group relative">
-        <svg
-          width="20"
-          height="20"
-          fill="currentColor"
-          className="absolute left-3 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500"
-          aria-hidden="true"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-          />
-        </svg>
+    <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 mb-10 bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+      <div className="flex-grow w-full relative group">
+        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 group-focus-within:text-indigo-600 transition-colors">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
         <input
-          className="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none
-      text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 px-10 ring-1 ring-slate-200 shadow-sm"
           type="text"
-          aria-label="Filter projects"
-          placeholder="Search items..."
+          placeholder="Search for premium tech products..."
+          className="block w-full pl-12 pr-4 py-4 bg-slate-50 border-none rounded-2xl text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-indigo-600 transition-all text-sm font-medium"
           onChange={onChange}
           name="query"
           value={query}
+          onKeyPress={(e) => e.key === 'Enter' && onSearch()}
         />
       </div>
 
-      <button
-        className="bg-gray-600 border border-transparent rounded-md py-2 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        onClick={onReset}
-      >
-        Reset
-      </button>
-      <button
-        className="bg-indigo-600 border border-transparent rounded-md py-2 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        onClick={onSearch}
-      >
-        Search
-      </button>
+      <div className="flex items-center space-x-3 w-full md:w-auto">
+        <button
+          className="flex-1 md:flex-none px-6 py-4 text-sm font-bold text-slate-600 hover:text-slate-900 bg-slate-50 hover:bg-slate-100 rounded-2xl transition-all active:scale-95"
+          onClick={onReset}
+        >
+          Reset
+        </button>
+        <button
+          className="flex-1 md:flex-none px-8 py-4 text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-2xl shadow-lg shadow-indigo-100 hover:shadow-indigo-200 transition-all active:scale-95 flex items-center justify-center space-x-2"
+          onClick={onSearch}
+        >
+          <span>Explore</span>
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };
 
 export default Search;
+

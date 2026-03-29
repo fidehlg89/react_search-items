@@ -1,79 +1,60 @@
-# Resume
-Simple Items List project with react js + tailwind
-Basic json-server api
+# TechStore - Premium Search & Discovery
 
-# Install
-run "yarn install" to get all dependencies
-run "yarn add json-server" to install
+TechStore is a professional React-based e-commerce storefront designed with a focus on visual excellence and robust functionality. It features a modern, responsive design and a fallback data system to ensure a seamless user experience even without a live API.
 
+## ✨ Features
 
-# Getting Started with Create React App
+- **Professional UI/UX**: Modern glassmorphism design using Tailwind CSS and Flowbite.
+- **Robust Data Fallback**: Automatically switches to high-quality mock data if the API is unreachable.
+- **Real-time Search**: Search and filter products with instant feedback and reset capabilities.
+- **Premium Product Visualization**: High-resolution imagery, inventory badges, and intuitive interactions.
+- **Redux State Management**: Centralized store for products and cart management.
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Getting Started
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+- Node.js (v14 or higher)
+- npm or yarn
 
-### `yarn start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react_search-items.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running the App
 
-### `yarn test`
+To start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
-### `yarn build`
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Fake API (Optional)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you wish to use the JSON server for persistent data:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run fake-api
+```
 
-### `yarn eject`
+The app is configured to use the local API by default but will fallback to internal mock data if it fails.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠 Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**: React 18, Tailwind CSS, Flowbite
+- **State Management**: Redux, Redux-Thunk
+- **HTTP Client**: Axios
+- **Icons & Symbols**: Heroicons (SVG)
+- **Typography**: Inter (Google Fonts)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📸 Preview
